@@ -33,9 +33,9 @@ const App = () => {
 
   return (
     <div className="App">
-      <form className='search-form'>
+      <form onSubmit={getSearch} className='search-form'>
         <input className='search-bar' type='text' value={search} onChange={updateSearch} />
-        <button className='search-button' type='submit' onClick={getSearch}>Search</button>
+        <button className='search-button' type='submit'>Search</button>
       </form>
 
       {recipes.map(recipe => (
