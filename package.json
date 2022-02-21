@@ -12,6 +12,8 @@
     "web-vitals": "^2.1.2"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -34,5 +36,21 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "description": "In the project directory, you can run:",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Abolfazl181920/RecipeApp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Abolfazl181920/RecipeApp/issues"
+  },
+  "homepage": "https://github.com/Abolfazl181920/RecipeApp#readme",
+  "devDependencies": {
+    "gh-pages": "^3.2.3"
   }
 }
